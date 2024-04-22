@@ -23,7 +23,6 @@ public class Handler {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        /* dataSource.setDriverClassName(driverclass); */
         dataSource.setUrl(dbUrl);
         dataSource.setUsername(dbUsername);
         dataSource.setPassword(dbPassword);
